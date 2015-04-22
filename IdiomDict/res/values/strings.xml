@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ChineseIdiom</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_exit">Exit</string>
+    <string name="title_tip">Message</string>
+    <string name="title_about">About the app</string>
+    <string name="msg_load_wait">First time oading, please wait!</string>
+    <string name="msg_check_wait">Checking update, please wait!</string>
+    <string name="msg_noneed_update">No update is available!</string>
+    <string name="msg_file_error">Sorry, file error!</string>
+    <string name="msg_enter_word">Please enter a idiom</string>
+    <string name="msg_cancel">Cancel</string>
+    <string name="msg_confirm_exit">Do you want to exit?</string>
+    <string name="msg_about_content">This is an amazing Chinese idiom dictionary,
+	    contains more than 10 thousand of most popular Chinese idioms, it\'s small and efficient,
+	     and all functions use for free!</string>
+    <string name="msg_yes">Yes</string>
+
+    <string-array name="setting_items">
+        <item>Check for update</item>
+        <item>More apps</item>
+        <item>Feedback</item>
+        <item>About</item>
+    </string-array>
+
+</resources>

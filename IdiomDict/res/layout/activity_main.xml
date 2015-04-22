@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#009900"
+        android:padding="12dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/img_market"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/top_img_button_bg_selector"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/actionbar_market_icon" />
+
+            <ImageButton
+                android:id="@+id/img_set"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/top_img_button_bg_selector"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/actionbar_more_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layoutTop"
+        android:layout_margin="8dp"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteWord"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.88"
+            android:background="#eceff4"
+            android:completionHint="@string/msg_enter_word"
+            android:completionThreshold="1"
+            android:hint="@string/msg_enter_word"
+            android:maxLength="30"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/buttonQuery"
+            android:layout_width="64dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bmob_update_button_ok_bg_selector"
+            android:scaleType="fitCenter"
+            android:src="@drawable/actionbar_search_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAdBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webViewExplain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutAdBottom"
+        android:layout_below="@id/layoutInput"
+        android:fadingEdgeLength="50dp" />
+
+</RelativeLayout>

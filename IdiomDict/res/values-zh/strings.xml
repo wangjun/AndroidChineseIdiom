@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="action_exit">退出</string>
+    <string name="action_settings">选项</string>
+    <string name="app_name">成语词典</string>
+    <string name="msg_about_content">这是一个非常好用的成语词典，包含了上万个常用的成语，它非常小巧
+        ，但是功能很强大，不仅能得到成语解释，还能得到读音，出处，释义，近义词，反义词，英文等信息。该应用完全免费使用！</string>
+    <string name="msg_cancel">取消</string>
+    <string name="msg_check_wait">正在检查更新，请稍后！</string>
+    <string name="msg_confirm_exit">确定要退出吗？</string>
+    <string name="msg_enter_word">请输入成语</string>
+    <string name="msg_file_error">对不起，文件操作失败！</string>
+    <string name="msg_load_wait">首次启动初始化，请稍后！</string>
+    <string name="msg_noneed_update">没有可用的更新！</string>
+    <string name="msg_yes">确定</string>
+    <string name="title_about">关于词典</string>
+    <string name="title_tip">提示</string>
+
+    <string-array name="setting_items">
+        <item>检查更新</item>
+        <item>必备应用</item>
+        <item>意见反馈</item>
+        <item>关于应用</item>
+    </string-array>
+
+</resources>
